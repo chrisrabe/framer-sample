@@ -9,6 +9,17 @@ const SimpleActions: React.FC = () => {
       <div className="flex flex-wrap gap-6">
         <Box className="flex flex-col items-center">
           <Box
+            component={motion.div}
+            className="w-32 h-32 rounded bg-blue-500 cursor-pointer"
+            initial={{ opacity: 1 }}
+            whileHover={{
+              opacity: 0,
+            }}
+          />
+          <span>Appear/Disappear</span>
+        </Box>
+        <Box className="flex flex-col items-center">
+          <Box
             className="w-32 h-32 bg-blue-500 rounded cursor-pointer"
             component={motion.div}
             initial={{ scale: 1 }}
